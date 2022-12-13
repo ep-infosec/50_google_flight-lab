@@ -1,0 +1,15 @@
+[Unit]
+Description={NAME}
+After=network.target
+
+[Service]
+ExecStart={CMDLINE}
+WorkingDirectory={SRC_DIR}
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier={NAME}
+Restart=always
+User={USER}
+
+[Install]
+WantedBy=multi-user.target

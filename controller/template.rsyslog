@@ -1,0 +1,2 @@
+if $programname == '{NAME}' then /var/log/{NAME}}.log
+& stop
